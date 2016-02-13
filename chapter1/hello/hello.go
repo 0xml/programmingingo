@@ -16,15 +16,15 @@ package main
 
 // Importing three packages from standard library
 import (
-    "fmt"
-    "os"
-    "strings"
+	"fmt"
+	"os"
+	"strings"
 )
 
 func main() {
-    who := "World!" // Short variable declaration
-    if len(os.Args) > 1 { /* os.Args[0] is "hello" or "hello.exe" */
-        who = strings.Join(os.Args[1:], " ") // Take slice of arguments passed to program and join them using space character
-    }
-    fmt.Println("Hello", who)
+	who := "World!"       // Short variable declaration
+	if len(os.Args) > 1 { /* os.Args[0] is "hello" or "hello.exe" */
+		who = strings.Join(os.Args[1:], " ") // Take slice of arguments passed to program and join them using space character
+	}
+	fmt.Println("Hello", who)
 }
